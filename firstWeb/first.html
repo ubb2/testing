@@ -1,0 +1,109 @@
+<!doctype html>
+<!--  Used to declare doc type of this doc (what version of html)-->
+
+<html lang="en">
+  <!--  Html elemnet is the root element
+      " lang="end" " is a HTML attribute (added in tags for more info)-->
+  <head>
+    <!-- head element is for meta info about our webstages
+      this element should never contain elements that display stuff-->
+    <meta charset="UTF-8" />
+    <!--  For charset encoding, must have-->
+    <title>Testing Testing 123</title>
+    <!--  What is on the tab, not the actual webpage-->
+  </head>
+
+  <body>
+    <!-- This is where all the content displayed to the user will go-->
+    <h2>SECTION: ELEMENTS</h2>
+    <!-- Elements below:-->
+
+    <p>
+      <!-- Paragraph element is to group text -->
+      paragraph element example
+    </p>
+
+    <h1>
+      <!-- Header elements is for text that is bigger and bolder, like headers
+       h1 through h6, with h1 being the biggest and h6 being the smallest -->
+      h1 example
+    </h1>
+
+    <h6>h6 example</h6>
+
+    <strong>
+      <!-- Strong element make texts bold
+       Usually within other elemtns like paragraph elements -->
+      strong example
+    </strong>
+
+    <em>
+      <!-- Em element makes text italic 
+       Usually within other elemtns like paragraph elements-->
+      em example
+    </em>
+
+    <!-- Parent, child, sibling relationships
+     If a element in nested within another element, the surrounding element is the part
+     and the surrounded element is the child.
+     Two child elements are siblings if they share the same parent -->
+
+    <h2>SECTION: LISTS</h2>
+
+    <!-- Unordered lists -->
+    <ul>
+      <li>This</li>
+      <li>is a</li>
+      <li>unordered</li>
+      <li>list</li>
+    </ul>
+
+    <!-- Ordered lists -->
+    <ol>
+      <li>This</li>
+      <li>is a</li>
+      <li>ordered</li>
+      <li>list</li>
+    </ol>
+
+    <h2>SECTION: LINKS AND IMAGES</h2>
+
+    <!-- Links -->
+    <p>
+      <a
+        href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F"
+        target="_blank"
+        rel="noopener"
+      >
+        <!-- target attribute is where the tab should be opened
+       default is _self, which replaces the tab opened
+       _blank is open in a new tab -->
+        <!-- rel is relationship between the tabs
+        noopener is making them seperate -->
+        link to git (absolute)
+      </a>
+    </p>
+
+    <!-- two difference types of links, absolute and relative
+     absolute links are links to other websites
+     relative links are links to webpages within our website/repo -->
+    <p>
+      <a href="./relativeLinkEx.html" target="_blank" rel="noopener">
+        relative link here
+      </a>
+    </p>
+
+    <!-- Images 
+     src is the filepath to the image
+     alt is the text displayed in case the image could not be found
+     height and width are yea, always good practice to include these-->
+    <p>
+      <img
+        src="./images/cute-red-panda.jpg"
+        alt="Red Panda"
+        height="150"
+        width="200"
+      />
+    </p>
+  </body>
+</html>
