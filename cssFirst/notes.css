@@ -1,0 +1,149 @@
+/* CSS syntax is usually made of various rules.
+Each rule is made up of a selector and a list of declarations
+Each declaration made up of a property-value pair.
+*/
+
+/*
+PART ONE PART ONE LALALA
+Selectors--------------------
+The aspect of the syntax that is what html elements to which the following css rules are applied to.
+*/
+
+/* Universal Selector: * */
+
+* {
+  color: purple;
+}
+
+/* Type selectors: 
+Works on every element with this certain type. 
+For example, the example below would work on only and all div elements.*/
+
+div {
+  color: white;
+}
+
+/* Class selectors: 
+Works on every element with this class.
+
+You can assign a class to an html element as an attribute via:
+<div class="alert-text">Text here.</div>
+
+Multiple classes would look like:
+<div class="alert-text warning-text">Text here.</div>
+
+We can add multiple classes to the same selector by commas
+Also try not to start a class name with a number
+*/
+
+.alert-text {
+  color: red;
+}
+
+/* This following code would target all elements with class EITHER alert-text OR warning-text
+ */
+.alert-text,
+.warning-text {
+  color: red;
+}
+
+/* Chaining selectors
+If we want to target elements that have to have all 2 or more specific classes we chain
+no spaces in the syntax
+This following code would target elements that have both of these classes.
+We can chain class, type, and ids.
+*/
+
+.alert-text.warning-text {
+  color: red;
+}
+
+/* IDs
+Like a selector, but an element is limited to one ID only.
+<div id="title">Text here.</div>
+*/
+#title {
+  color: aqua;
+}
+
+/* Descendant combinators
+Works for classes that are inside each other.
+
+For example,
+<div class="parent">
+    Text here.
+    <div class="child">More text here but its cssed.</div>
+</div>
+
+The following css would only select elements that are a child class but also inside an parent class element.
+It would not work with just a child class element.
+ */
+.parent .child {
+  color: white;
+}
+
+/*
+PART TWO PART TWO LALALA
+Properties--------------------
+Stuff that actually does stuff
+*/
+
+/* Color and background color
+Yeah lol
+accepts keywords, hex, rbg, hsl values
+ */
+
+p {
+  color: red;
+  background-color: rbg(23, 45, 56);
+}
+
+/* Typography and text-alignment 
+
+font-family: determines the actual font.
+Font family name is a specific font name (in quotes) "Times New Roman"
+Generic family name is a group of fonts, like serif
+We want to list fonts, and the browser will go through them in order and pick the first one supported.
+We usually want to end this list with a generic family name.
+
+font-size: determines the size of the font.
+
+font-weight: determines the boldness of the text.
+Numerically, usually number from 100 to 900 in increments of 100.
+Also keywords like "bold" work.
+
+text-align: determines the alignment of the text.
+common keyword values: center, left, right, justify
+
+*/
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Height and width (images) 
+Default is the image file's height and width.
+use "auto" to use the default as well.
+*/
+
+img {
+  height: auto;
+  width: 500px;
+}
+
+/*
+PART THREE PART THREE LALALA
+Other ways of adding css--------------------
+*/
+
+/* Internal css 
+Use a style element in the head element in the html file, place the css between start and end tag of style.
+Useful in specific webpage styling.
+*/
+
+/* Inline css
+Use style attribute inside the starting tag of html elements.
+ */
