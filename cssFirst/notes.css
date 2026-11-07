@@ -5,7 +5,7 @@ Each declaration made up of a property-value pair.
 
 /*
 PART ONE PART ONE LALALA
-Selectors--------------------
+Selectors--------------------------------------------------------------------------------------------------------------------
 The aspect of the syntax that is what html elements to which the following css rules are applied to.
 */
 
@@ -84,7 +84,7 @@ It would not work with just a child class element.
 
 /*
 PART TWO PART TWO LALALA
-Properties--------------------
+Properties--------------------------------------------------------------------------------------------------------------------
 Stuff that actually does stuff
 */
 
@@ -136,7 +136,7 @@ img {
 
 /*
 PART THREE PART THREE LALALA
-Other ways of adding css--------------------
+Other ways of adding css----------------------------------------------------------------------------------------------------
 */
 
 /* Internal css 
@@ -146,4 +146,35 @@ Useful in specific webpage styling.
 
 /* Inline css
 Use style attribute inside the starting tag of html elements.
+ */
+
+/*
+PART FOUR PART FOUR LALALA
+Cascade and Inheritance--------------------------------------------------------------------------------------------------------------------
+*/
+
+/* 
+The cascade is how preference works in CSS.
+The more specific CSS declaration will overwrite others.
+
+1: ID selectors
+2: Class selectors
+3: Type selectors
+
+Also within tiers, more is better.
+A rule with 2 class selectors will beat a rule with 1 class selector.
+A rule with 1 ID selector and 1 class selector with beat a rule with just 1 ID selector.
+The way that selectors are combined does not matter, through chaining, descendant, etc.
+
+
+Inheritance:
+
+Some properties are inherited, but most are not.
+Inheritance is through descendancy.
+Dispite cascading rules, a child's own rules out priorizties the parents rules.
+The parent's rules are just the default.
+
+
+Final rule order:
+If all else is a tie, the rule written last takes priority.
  */
