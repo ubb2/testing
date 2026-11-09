@@ -178,3 +178,39 @@ The parent's rules are just the default.
 Final rule order:
 If all else is a tie, the rule written last takes priority.
  */
+
+/*
+PART FIVE PART FIVE LALALA
+The Box Model--------------------------------------------------------------------------------------------------------------------
+*/
+
+/* 
+Everything on a webpage is a rectangular box.
+
+We can use css to set their outline to a solid color to see them:
+
+* {
+  outline: 2px solid red;
+}
+
+Tools to change the size of these boxes:
+Padding, border, margin.
+
+Padding is the space between the border and the content of the box.
+Border is the actual border of the box (space between padding and margin).
+Margin is the space between borders of different boxes.
+
+
+Content is the inmost aspect of a box.
+Then the padding surrounds the content.
+Then the border surrounds the padding.
+Then the margin surrounds the border.
+
+Height and width happens to the actual content.
+The padding, border, and margin go around this height and width.
+
+Something important about margins:
+They collapse. The largest margin takes priority.
+A box with margin 70px next to a box with margin 100px, these two boxes have
+100px margin distance between them.
+ */
