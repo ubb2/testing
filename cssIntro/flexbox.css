@@ -1,0 +1,71 @@
+/* Notes on flexboxing */
+
+/* 
+Flexbox is a way to arrange items into ROWS and COLUMNS
+Items will then flex based on rules.
+
+A flexbox is two things:
+a flex container (the biggest box containing everything)
+and flex items (the boxes inside the container)
+
+A flex item can be a flex container for another flex box.
+
+--------------------------------------------------------------------------------------------------------
+
+The flex property is a property that can be applied to flex boxes.
+Its shorthand for 3 main properties: flex-grow, flex-shrink, and flex-basis.
+
+flex-grow
+Input is a single number
+The "growth factor"
+A flex item with growth factor 2 would be twice as big as one with growth factor 1.
+
+flex-shrink
+Input is a single number
+The "shrink factor"
+Only is used if the size of all flex items is larger then the container.
+Similar to growth in how different flex items react with different shrink factors.
+
+These two properties ignore width.
+
+flex-basis
+Sets the intial size of a flex item.
+This is useful because if we want two flex items to be the same size,
+but their starting width is different, having the same growth would result in different
+size items. But, setting the intial size of all flex items to 0 would be the same growth 
+values would effect them similarity.
+
+flex: 1 sets the following values:
+flex-growth : 1
+flex-shrink: 1
+flex-basis: 0
+
+--------------------------------------------------------------------------------------------------------
+
+Axes and flex-direction
+
+Default for flex-direction is row.
+row means the main axis is horizontal, and the flex items move left to right.
+
+Another value for flex-direction is column.
+column means the main axis is vertial, and the flex items move up to down.
+
+Column is weird and row is not weird because:
+row elements width default to their parents' width but
+column elements' height default to their contents' height.
+
+--------------------------------------------------------------------------------------------------------
+
+Changing where the items actually are.
+
+justify-content changes items along the main axis, while
+align-items changes items along the cross axis.
+
+This changes if you change the flex direction.
+
+the gap property on a flex container makes this much pixels between each container.
+
+align-self is a property on a flex item, that chanegs the align for only itself.
+
+min-width is a property on a flex item, that changes the min width.
+*/
