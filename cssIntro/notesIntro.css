@@ -206,11 +206,47 @@ Then the padding surrounds the content.
 Then the border surrounds the padding.
 Then the margin surrounds the border.
 
-Height and width happens to the actual content.
+Height and width in css happens to the actual content.
 The padding, border, and margin go around this height and width.
+If we want the height and width we set in css to include padding and border,
+we need box-sizing: border-box
 
 Something important about margins:
 They collapse. The largest margin takes priority.
 A box with margin 70px next to a box with margin 100px, these two boxes have
 100px margin distance between them.
+ */
+
+/*
+PART SIX PART SIX LALALA
+Block vs Inline boxes--------------------------------------------------------------------------------------------------------------------
+*/
+
+/*  
+Two different types of elements/boxes
+
+First type is block elements.
+By default, these elements start on a new line.
+
+Second type is inline elements.
+By default, these elements appear on the same line as the elements besides them.
+
+There is a third type of element called inline-block.
+This behaves like an inline element, but with block-style padding and margin.
+Kind of useful, but flexboxes usually take care of these issues.
+ */
+
+/*
+PART SEVEN PART SEVEN LALALA
+DIV vs SPAN html elements--------------------------------------------------------------------------------------------------------------------
+*/
+
+/* 
+Div and span elements are just container elements. They group things so they canbe styled with css easily.
+
+Div elements are block-level containers.
+Its a block that srarts on a new line and streches across the full width of its parent.
+
+Span elements are inline containers.
+They sit inside a line of text and takes up as much space as its content.
  */
