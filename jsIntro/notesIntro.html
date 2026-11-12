@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- we can also load the js as an external file -->
+    <!-- the defer makes the js file run only after all the html
+      has been parsed through and loaded  -->
+    <script src="notesIntro.js" defer></script>
+  </head>
+
+  <body>
+    <script>
+      // we can use the script tag to put js into the html file directly
+      // for simple small js uses this is fine, this is also good for performance
+      console.log("Hello world!");
+    </script>
+  </body>
+</html>
