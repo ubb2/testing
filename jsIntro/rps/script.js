@@ -24,7 +24,7 @@ function getComputerChoice() {
 function playRound() {
   // 0 is tie, 1 is player won, -1 is computer won
   computer = getComputerChoice();
-  playerText.textContent = "The player picked: " + changeNums(player);
+  playerText.textContent = "You picked: " + changeNums(player);
   computerText.textContent = "The computer picked: " + changeNums(computer);
   if (player == -1) {
     resetPlayer();
@@ -51,7 +51,8 @@ function playRound() {
 
 function resetPlayer() {
   player = -1;
-  choiceText.textContent = "Current selection: None";
+  choiceText.textContent =
+    "Current selection: N/A " + String.fromCodePoint(0x1f6ab);
 }
 
 function resetAll() {
@@ -59,10 +60,12 @@ function resetAll() {
   computer = -1;
   playerScore = 0;
   computerScore = 0;
-  choiceText.textContent = "Current selection: None";
+  choiceText.textContent =
+    "Current selection: N/A " + String.fromCodePoint(0x1f6ab);
   resultText.textContent = "Result:";
-  playerText.textContent = "The player picked:";
-  computerText.textContent = "The computer picked:";
+  playerText.textContent = "You picked: N/A " + String.fromCodePoint(0x1f6ab);
+  computerText.textContent =
+    "The computer picked: N/A " + String.fromCodePoint(0x1f6ab);
   scoreText.textContent =
     "Score: Player " + playerScore + ", Computer " + computerScore;
 }
@@ -70,7 +73,7 @@ function resetAll() {
 function changeNums(a) {
   switch (a) {
     case -1:
-      return "None";
+      return "N/A " + String.fromCodePoint(0x1f6ab);
     case 0:
       return "Rock " + String.fromCodePoint(0x1faa8);
     case 1:
