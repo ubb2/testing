@@ -1,0 +1,10 @@
+* {
+  font-family: "Courier New", Courier, monospace, "Apple Color Emoji";
+  margin-bottom: 20px;
+}
+
+.text {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}

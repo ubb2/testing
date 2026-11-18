@@ -7,11 +7,25 @@
     <title>RPS</title>
 
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <script>
-      console.log("Hello world!");
-    </script>
+    <h3>Rock Paper Scissors!!</h3>
+
+    <div id="menu">
+      <button id="rock" class="selection">Rock &#x1FAA8</button>
+      <button id="paper" class="selection">Paper &#x1F4C4</button>
+      <button id="scissors" class="selection">Scissors &#x2702&#xFE0F</button>
+      <div class="choice text">Current selection: none</div>
+
+      <button id="play" class="selection">Play Round</button>
+
+      <div class="playerChoice text">The player picked:</div>
+      <div class="computerChoice text">The computer picked:</div>
+      <div class="result text">Result:</div>
+      <div class="score text">Score: Player 0, Computer 0</div>
+      <button id="reset" class="selection">Reset Score</button>
+    </div>
   </body>
 </html>
