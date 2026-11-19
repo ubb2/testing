@@ -50,33 +50,20 @@ function makeGrid(num) {
   boxWidth = width / boxNum;
   basicBox.style.width = boxWidth + "px";
   basicBox.style.height = boxHeight + "px";
-  basicBox;
   for (i = 0; i < num * num; i++) {
     containerBoxes.appendChild(basicBox.cloneNode(false));
   }
   let boxes = document.querySelectorAll(".box");
   boxes.forEach((box) => {
-    box.addEventListener("mouseover", mouseEnter);
-    box.addEventListener("mouseout", mouseExit);
+    box.addEventListener("mouseover", (e) => {
+      colorQueue.push(e.target);
+      if (colorQueue.length > 7) {
+        colorQueue.shift();
+      }
+      for (i = 0; i < colorQueue.length; i++) {
+        colorQueue[i].style.backgroundColor = colorSet[i];
+      }
+    });
   });
   return;
-}
-function mouseEnter(e) {
-  e.target.style.backgroundColor = "white";
-  colorChanges(e);
-  // this should be where colors should be changed
-}
-
-function mouseExit(e) {
-  e.target.style.backgroundColor = "black";
-}
-
-function colorChanges(e) {
-  colorQueue.push(e.target);
-  if (colorQueue.length > 7) {
-    colorQueue.shift();
-  }
-  for (i = 0; i < colorQueue.length; i++) {
-    colorQueue[i].style.backgroundColor = colorSet[i];
-  }
 }
