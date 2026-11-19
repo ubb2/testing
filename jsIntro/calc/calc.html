@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc</title>
+
+    <script src="calcScript.js" defer></script>
+    <link rel="stylesheet" href="calcStyle.css" />
+  </head>
+  <body>
+    <h2 id="header">Calc: short for calculator</h2>
+
+    <div id="calcContainer">
+      <div id="display">|</div>
+      <div id="buttonContainer">
+        <div class="row row1">
+          <!-- Delete all (AC, this takes two spots)
+               back (Arrow point left)
+               divid 
+               -->
+          <button class="AC remove long">AC</button>
+          <button class="back remove"><-</button>
+          <button class="divid operation">/</button>
+        </div>
+        <div class="row row2">
+          <!-- Number 7
+               Number 8
+               Number 9
+               multiply
+               -->
+          <button class="seven number">7</button>
+          <button class="eight number">8</button>
+          <button class="nine number">9</button>
+          <button class="mult operation">*</button>
+        </div>
+        <div class="row row3">
+          <!-- Number 4
+               Number 5
+               Number 6
+               subtract
+               -->
+          <button class="four number">4</button>
+          <button class="five number">5</button>
+          <button class="six number">6</button>
+          <button class="subtract operation">-</button>
+        </div>
+        <div class="row row4">
+          <!-- Number 1
+               Number 2
+               Number 3
+               add
+               -->
+          <button class="one number">1</button>
+          <button class="two number">2</button>
+          <button class="three number">3</button>
+          <button class="add operation">+</button>
+        </div>
+        <div class="row row5">
+          <!-- Negative sign
+               Number 0
+               Decimal Point
+               Equals sign
+               -->
+          <button class="zero number long">0</button>
+          <button class="decimal numberLike">.</button>
+          <button class="equal operationLike">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

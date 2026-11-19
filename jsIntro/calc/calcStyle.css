@@ -1,0 +1,85 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#header {
+  text-align: center;
+}
+
+#calcContainer {
+  align-items: center;
+  width: 300px;
+  border-style: solid;
+  border-color: grey;
+  border-width: 2px;
+  background-color: black;
+  color: white;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  font-size: large;
+  border-style: solid;
+  border-color: darkslategray;
+}
+
+.long {
+  width: 133px;
+}
+
+#display {
+  border-bottom: 2px solid black;
+  height: 50px;
+  font-size: 28px;
+  padding: 6px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.row5 {
+  margin-bottom: 10px;
+}
+
+.operation,
+.operationLike {
+  background-color: orange;
+}
+
+.operation:active,
+.operationLike:active {
+  background-color: #fed8b1;
+}
+
+.number,
+.numberLike {
+  background-color: grey;
+}
+
+.remove {
+  background-color: darkgrey;
+}
+.number:active,
+.numberLike:active,
+.remove:active {
+  background-color: lightgrey;
+}
