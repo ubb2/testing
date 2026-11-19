@@ -47,8 +47,6 @@ buttons.forEach((button) => {
         temp += displayString[i];
       }
     }
-    console.log(temp);
-    console.log(displayString);
     display.textContent = temp;
   });
   return;
@@ -59,15 +57,22 @@ function solve() {
     return "invalid";
   }
   let total = 0;
+  let negates = 0;
   for (i = 0; i < displayString.length; i++) {
     if (operations.includes(displayString[i])) {
       total += 1;
+    }
+    if (displayString[i] === "-") {
+      negates += 1;
     }
     if (total > 1) {
       return "invalid";
     }
   }
   if (total == 0) {
+    if (negates > 1) {
+      return "invalid";
+    }
     return displayString;
   }
   let num1 = "";
