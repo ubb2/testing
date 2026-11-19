@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch a Sketch project</title>
+
+    <script src="etchScript.js" defer></script>
+    <link rel="stylesheet" href="etchStyle.css" />
+  </head>
+  <body>
+    <h3 id="title">Etch a sketch!!</h3>
+    <div id="containerInput">
+      <label for="boxNum">Number of boxes per side?</label>
+      <input
+        type="number"
+        min="1"
+        max="100"
+        id="boxNum"
+        name="boxNum"
+        attribute="1"
+        required
+      />
+      <input class="button" type="submit" value="Submit" />
+    </div>
+
+    <div id="containerBoxes"></div>
+    <div id="footer"></div>
+  </body>
+</html>

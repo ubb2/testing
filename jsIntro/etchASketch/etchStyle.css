@@ -1,0 +1,35 @@
+#title {
+  text-align: center;
+}
+
+#containerInput {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#containerBoxes {
+  flex-grow: 1;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 98vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: black;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
+
+/* 52 test, 324 answers */
