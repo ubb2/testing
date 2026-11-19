@@ -8,6 +8,16 @@ let boxHeight = 0;
 let boxWidth = 0;
 const basicBox = document.createElement("div");
 basicBox.classList.add("box");
+let colorQueue = [];
+let colorSet = [
+  "black",
+  "dimgray",
+  "gray",
+  "darkgray",
+  "silver",
+  "lightgray",
+  "white",
+];
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
@@ -43,5 +53,30 @@ function makeGrid(num) {
   basicBox;
   for (i = 0; i < num * num; i++) {
     containerBoxes.appendChild(basicBox.cloneNode(false));
+  }
+  let boxes = document.querySelectorAll(".box");
+  boxes.forEach((box) => {
+    box.addEventListener("mouseover", mouseEnter);
+    box.addEventListener("mouseout", mouseExit);
+  });
+  return;
+}
+function mouseEnter(e) {
+  e.target.style.backgroundColor = "white";
+  colorChanges(e);
+  // this should be where colors should be changed
+}
+
+function mouseExit(e) {
+  e.target.style.backgroundColor = "black";
+}
+
+function colorChanges(e) {
+  colorQueue.push(e.target);
+  if (colorQueue.length > 7) {
+    colorQueue.shift();
+  }
+  for (i = 0; i < colorQueue.length; i++) {
+    colorQueue[i].style.backgroundColor = colorSet[i];
   }
 }
